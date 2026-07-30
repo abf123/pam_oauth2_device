@@ -4,6 +4,10 @@ GTEST_DIR = /usr
 
 SRC_DIR = ../src
 
+CC ?= cc
+
+CFLAGS += -g -Wall -Wextra
+
 CPPFLAGS += -isystem -I$(GTEST_DIR)/include -I$(SRC_DIR)/include -I$(SRC_DIR)
 
 CXXFLAGS += -g -Wall -Wextra -Wno-unused-parameter -pthread -std=c++11
@@ -40,7 +44,11 @@ distclean: clean
 # System libraries for gtest (includes the default main function)
 GTEST_LIBS = -lgtest_main -lgtest -lpthread
 
-%.o: %.c %.h
+
+%.o: %.c
+	$(CC) $(CPPFLAGS) $(CFLAGS) -c $< -o $@
+
+%.o: %.cpp %.h
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 test_config.o: test_config.cpp $(GTEST_HEADERS) $(SRC_DIR)/include/config.hpp
