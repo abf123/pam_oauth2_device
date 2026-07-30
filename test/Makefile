@@ -10,7 +10,7 @@ CFLAGS += -g -Wall -Wextra
 
 CPPFLAGS += -isystem -I$(GTEST_DIR)/include -I$(SRC_DIR)/include -I$(SRC_DIR)
 
-CXXFLAGS += -g -Wall -Wextra -Wno-unused-parameter -pthread -std=c++11
+CXXFLAGS += -g -Wall -Wextra -Wno-unused-parameter -pthread -std=c++14
 
 LDLIBS=-lpam -lcurl -lldap -llber
 
