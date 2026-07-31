@@ -25,7 +25,7 @@ The two basic targets are `make` and `make test`; the latter will build (some of
 From a base Rocky 8 system (tested with 8.10)
 ```
 sudo dnf install gcc gcc-c++ make git
-sudo dnf install pam-devel openldap-devel libcurl-devel
+sudo dnf install pam-devel openldap-devel libcurl-devel json-devel
 git clone https://github.com/stfc/pam_oauth2_device.git
 cd pam_oauth2_device
 make 

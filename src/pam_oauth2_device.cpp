@@ -14,12 +14,12 @@
 //#include <regex>
 #include <cstdio>
 #include <fstream>
+#include <nlohmann/json.hpp>
 
 #include "include/config.hpp"
 #include "include/metadata.hpp"
 #include "include/ldapquery.h"
 #include "include/nayuki/QrCode.hpp"
-#include "include/nlohmann/json.hpp"
 #include "include/pam_oauth2_curl.hpp"
 #include "include/pam_oauth2_excpt.hpp"
 #include "include/pam_oauth2_log.hpp"

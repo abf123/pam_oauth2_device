@@ -1,6 +1,6 @@
+#include <nlohmann/json.hpp>
 #include "gtest/gtest.h"
 #include "include/config.hpp"
-#include "include/nlohmann/json.hpp"
 
 #define CLIENT_ID "client_id"
 
