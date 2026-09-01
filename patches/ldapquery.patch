@@ -1,0 +1,12 @@
+diff --git a/src/include/ldapquery.c b/src/include/ldapquery.c
+index 1424b31..98b6039 100644
+--- a/src/include/ldapquery.c
++++ b/src/include/ldapquery.c
+@@ -45,6 +45,7 @@ int ldap_check_attr(void const *pamh, enum ldap_loglevel_t log,
+     struct berval cred;
+     struct berval **vals;
+     char *attr_local = NULL;
++    attr_local = strdup(attr);
+     char *attrs[] = {attr_local, NULL};
+     const int ldap_version = LDAP_VERSION3;
+ 
