@@ -1,8 +1,8 @@
 #!/bin/bash
 
 NAME=pamoauth2device
-VERSION=0.1.1
-URL_REPO=https://github.com/jsurkont/pam_oauth2_device
+VERSION=0.1.2
+URL_REPO=https://github.com/abf123/pam_oauth2_device
 BUILD_DIR=${NAME}-${VERSION}
 
 curl -L ${URL_REPO}/archive/v${VERSION}.tar.gz -o ${NAME}_${VERSION}.orig.tar.gz
