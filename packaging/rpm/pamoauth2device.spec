@@ -1,5 +1,5 @@
 # pam_oauth2_device version
-%define _version 0.1
+%define _version 0.1.2
 %define _lib /lib64
 
 
