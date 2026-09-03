@@ -1,5 +1,5 @@
 # pam_oauth2_device version
-%define _version 0.1-1
+%define _version 0.1
 %define _lib /lib64
 
 
@@ -57,7 +57,7 @@ cp config_template.json ${RPM_BUILD_ROOT}%{_sysconfdir}/pam_oauth2_device/config
 
 
 %changelog
-* Fri Sept 3 2026 Adam Focht <abf123@psu.edu> - 0.1-1
+* Fri Sept 3 2026 Adam Focht <abf123@psu.edu> - 0.1.2
 - Changed upstream repo urls
 
 * Thu Aug 13 2020 Will Furnell <will.furnell@stfc.ac.uk> - 0.1
